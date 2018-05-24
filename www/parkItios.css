@@ -1,0 +1,23 @@
+body{
+    font-family: "Helvetica Neue", Helvetica, sans-serif;
+    background-color: white;
+}
+#navbar{
+    background-color: white;
+    color: black;
+}
+button{
+    border: none;
+    background-color: white;
+    color: #0080ff;
+}
+#instructions, #map, #directions{
+    border-radius: 10px;
+    background-color: white;
+    border: 1px #dddddd solid;
+}
+#gotIt{
+    background-color: #0080ff;
+    color: white;
+    border-radius: 5px;
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="parkIt.css">
+    <link type="text/css" rel="stylesheet" href="parkItandroid.css">
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBEzhgva6jDs0uoZdFe7mx1RoXWCM_r7ts"></script>
+    <script type="text/javascript" src="parkIt.js"></script>
+    <script type="text/javascript" src="cordova.js"></script>
+    <title>Park It</title>
+</head>
+<body onLoad="init()">
+    <div id="navbar">
+        <button id="park" onclick="setParkingLocation()">Park</button>
+        Park It
+        <button id="retrieve" onclick="getParkingLocation()">Find</button>
+    </div>
+    <div id="container">
+        <div id="instructions">
+            <p>Click the Park button to set the parking location</p>
+            <p>Click the find button to retrieve the parking location</p>
+            <p style="text-align: center"><button id="gotIt" onclick="setCss('instructions', 'display', 'none')">Got It</button></p>
+        </div>
+    </div>
+    <div id="map">
+    </div><div id="directions">
+    </div>
+</body>
+</html>
